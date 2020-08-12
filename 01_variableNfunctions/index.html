@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bob = 4;                  // Create a variable (bob) on the global scope with the value of 4
+        console.log(bob);             //  print bobs value
+
+        function addAlice(){          // Create a function (addAlice)
+            var alice = 5;            //  inside addAlice create a variable (alice) with the value of 5
+            console.log(bob + alice); //  print the result of alice plus bob
+            bob = 42;                 //  change the value of bob to 42
+        }
+
+        addAlice();                   // Call the function addAlice
+        console.log(bob);             // In the global scope again print bob
+    </script>
+</body>
+</html>

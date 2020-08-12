@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>wELCOME TO THE woNderFUL woRLD OF coDE</title>
+</head>
+<body>
+  <script>
+
+    var number1 = prompt("Guess the secret number!!!");
+
+    var number2 = 23;
+
+    //  number2 = Math.round( Math.random() * 2 ); // gives me a number between 0,1,2
+    //  Math.random() gives a number between 0 and 1 so for example: 0.821736516534
+    //  in order to get a number from 0 to 2 you need to multiply it by 2
+    //  in order to make it a whole number again, you need to round it using Math.round()
+
+    var resultOfComparison = number1 == number2;
+
+    if ( resultOfComparison ){
+      // result is true
+      alert("You are absolutely right!");
+    } else {
+      // result is false
+      alert("Wrong@!");
+    }
+
+    // while somthing is true
+    //     != means not equal
+    while ( number1 != number2 ) {
+      //do something
+    }
+
+</script>
+</body>
+</html>

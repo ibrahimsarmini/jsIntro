@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>wELCOME TO THE woNderFUL woRLD OF coDE</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div class="ball">
+        1
+    </div>
+    <div class="ball">
+        2
+    </div>
+    <style>
+        [class="ball"] {
+            background-color: red;
+            border-radius:    50%;
+            width:            100px;
+            height:           100px;
+            position:         fixed;
+            top:              100px;
+            left:             100px;
+        }
+    </style>
+    <script>
+        function whatHappensOnMouseMove ( event ) {
+            ball.style.left = ( event.x - 50 ) + 'px';
+            ball.style.top  = ( event.y - 50 ) + 'px';
+        }
+        const ball = document.querySelector('[class="ball"]');
+        document.onmousemove = whatHappensOnMouseMove;
+    </script>
+</body>
+</html>
