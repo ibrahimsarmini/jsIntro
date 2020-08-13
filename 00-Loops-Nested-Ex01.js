@@ -1,5 +1,12 @@
 
-// Exercise 1
+console.log(`
+███████╗██╗  ██╗     ██╗
+██╔════╝╚██╗██╔╝    ███║
+█████╗   ╚███╔╝     ╚██║
+██╔══╝   ██╔██╗      ██║
+███████╗██╔╝ ██╗     ██║
+╚══════╝╚═╝  ╚═╝     ╚═╝
+`);
 
 // *
 // * *
@@ -36,6 +43,15 @@ for (
   str += "* "     // do this after each iteration
 ) console.log(str);
 
+console.log(`
+███████╗██╗  ██╗    ██████╗ 
+██╔════╝╚██╗██╔╝    ╚════██╗
+█████╗   ╚███╔╝      █████╔╝
+██╔══╝   ██╔██╗     ██╔═══╝ 
+███████╗██╔╝ ██╗    ███████╗
+╚══════╝╚═╝  ╚═╝    ╚══════╝
+`);
+
 // Exercise 2
 
 // [row] [column]
@@ -70,3 +86,35 @@ for (
   }
 
 }
+
+console.log(`
+███████╗██╗  ██╗    ██████╗ 
+██╔════╝╚██╗██╔╝    ╚════██╗
+█████╗   ╚███╔╝      █████╔╝
+██╔══╝   ██╔██╗      ╚═══██╗
+███████╗██╔╝ ██╗    ██████╔╝
+╚══════╝╚═╝  ╚═╝    ╚═════╝ 
+`);
+
+let repeat = '';
+
+for (let i = 1; i < 5; i++) {
+  for (let j = 0; j < 3; j++) {
+    repeat += ' ' + i;
+  }
+}
+
+// add a new line to the string
+repeat += '\n'; // \n means new line
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 5; j++) {
+    repeat += j + ' ';
+  }
+}
+
+// use trim to cut away all spaces
+// from the left and right side of our string
+//   '  asdsd   '.trim() => 'asdsd'
+
+console.log( repeat.trim() );
