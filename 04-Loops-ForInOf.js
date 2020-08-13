@@ -16,7 +16,7 @@ for (
   index++
 ) {
     const element = array[index];
-    console.log('classic:', element);
+    console.log( element );
 }
 
 console.log(`
@@ -35,14 +35,30 @@ console.log(`
 //   it will immedatly give us the values
 //   without any hassle
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// This only helps if you want to traverse an array from {0} to {.length}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 //            let index = 0; index < array.length; index++
 //          vvvvvvvvvvvvvv const value = array[index];
 for ( const value of array ) {
-    console.log('of:',value);
+    console.log( value );
 }
+
+console.log(`
+███████╗ ██████╗ ██████╗     ██╗███╗   ██╗
+██╔════╝██╔═══██╗██╔══██╗    ██║████╗  ██║
+█████╗  ██║   ██║██████╔╝    ██║██╔██╗ ██║
+██╔══╝  ██║   ██║██╔══██╗    ██║██║╚██╗██║
+██║     ╚██████╔╝██║  ██║    ██║██║ ╚████║
+╚═╝      ╚═════╝ ╚═╝  ╚═╝    ╚═╝╚═╝  ╚═══╝                                          
+`);
 
 // if you need the index you can use the for in loop
 
+for ( const index in array ) {
+  console.log(`index ${index}`);
+}
 
 // These loops are not only good for arrays...
 //  ... you can use them for objects too
@@ -98,3 +114,19 @@ console.log(`
 `);
 
 for ( const val of Object.values(o) ) console.log( val );
+
+console.log(`
+███████╗██╗  ██╗██╗██████╗ ██████╗ ██╗███╗   ██╗ ██████╗ 
+██╔════╝██║ ██╔╝██║██╔══██╗██╔══██╗██║████╗  ██║██╔════╝ 
+███████╗█████╔╝ ██║██████╔╝██████╔╝██║██╔██╗ ██║██║  ███╗
+╚════██║██╔═██╗ ██║██╔═══╝ ██╔═══╝ ██║██║╚██╗██║██║   ██║
+███████║██║  ██╗██║██║     ██║     ██║██║ ╚████║╚██████╔╝
+╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+`);
+
+// you can skip a few element by using slice
+//   array.slice(2) => [3,4,5,6,7]
+
+for ( const val of array.slice(2) ){
+  console.log(val);
+}
