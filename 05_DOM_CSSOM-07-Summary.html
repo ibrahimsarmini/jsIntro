@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS/D/OM</title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+
+</head>
+    <body>Summary</body>
+    <h2>Creating Elements</h2>
+    <pre class="language-javascript">
+        const ball = document.createElement('div');
+        // document.write() // don't use it
+    </pre>
+    <h2>Setting CSS classes</h2>
+    <pre class="language-javascript">
+        ball.classList.add('cssBall');
+        ball.classList.remove('cssBall');
+        ball.classList.toggle('cssBall');
+        ball.classList.value = 'class1 class2 class3';
+    </pre>
+    <h2>Inserting elements /append/prepend/...</h2>
+    <pre class="language-javascript">
+            document.body.append(ball)
+        //           .prepend(ball)
+        //       ball.appendTo(document.body);
+        // document.body.insertAdjacentElement( position, ball );
+        //   => the broadsword of element insertion
+    </pre>
+
+    <h2>Getting information about the window</h2>
+    <pre class="language-javascript">
+        window.innerHeight // read only: height of the window
+        window.innerWidth  // read only: width  of the window
+    </pre>
+
+    <h2>Do timed loops or wait to execute code</h2>
+    <pre class="language-javascript">
+        setInterval ( callback, timeInMS  );
+        setTimeout  ( callback, timeInMS  );
+        // clearTimeout, clearInterval // mdn
+    </pre>
+
+    <h2>Select existing elements from the document</h2>
+    <pre class="language-javascript">
+        document.querySelector()        // one element with css selector
+        document.querySelectorAll()     // multiple by class
+        document.getElementById()       // one element by id ( no # )
+        document.getElementsByClassName // multiple by class ( no . )
+        // ...
+        //   const $ = document.querySelectorAll
+        //   $('.ball')
+    </pre>
+
+    <h2>Camelization Rule</h2>
+    <pre class="language-javascript">
+        ball.style['font-size'] = '12px';
+        ball.style.fontSize     = '12px';
+    </pre>
+
+    <h2>Real CSS</h2>
+    <pre class="language-javascript">
+        // translate into CSSOM
+        ball.style.cssText = `
+            width:  100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: green;
+            font-weight: bolder;
+        `;
+        // translate into CSS
+        console.log(
+            ball.style.cssText
+        );
+    </pre>
+
+
+</html>
