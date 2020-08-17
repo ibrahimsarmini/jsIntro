@@ -17,39 +17,41 @@
     // -- document.write(`<div class="jsBall">JS</div>`);
     // WE DONT USE IT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // except for debugging and fiddles
-
+    
     // We rather use something like this:
-    const ball = document.createElement('div');
+    const ball = document.createElement('div'); // => <div/>
     // this creates an html element (of type div) which is floating in
     // thin air... meaning it has not been attached to the document yet
-
+    
     // Append the element to the document's body, so we can see it
-    document.body.append(ball);
-
+    document.body.append(ball); // => <body><div/>< / body>
+    //                                         ^^^^^^^^ WTF???
+    
     // instead of geting a reference to the div.ball using a css selector 
     //----> const ball = document.querySelector('.jsBall');
-
+    
     // Now the ball does not have any text inside or a css class
     //   ofc we don't use the css class but we want to do exaclty
     //   the same as in the examples before.
-
+    
     ball.innerText = 'JS'; // inner text sets stuff between
-                           // the pointy braces <div>HERE</div>
-                           // we prefer innerText over innerHTML
-                           // becasuse of securtiy implications
-                           // AGAIN: google XSS
-
+    // the pointy braces <div>HERE</div>
+    // we prefer innerText over innerHTML
+    // becasuse of securtiy implications
+    // AGAIN: google XSS
+    // => <div>JS</div>
+    
     ball.classList.add('jsBall'); // add a class to the html tag
     ball.classList.add('test');   // add another one
-    // => class="jsBall test"
+    // => <div class="jsBall test">JS</div>
     ball.classList.value = 'jsBall'; // replace all css classes
-    // => class="jsBall"
+    // => <div class="jsBall">JS</div>
     ball.classList.remove('jsBall'); // remove cssClass (if its there)
-    // => class=""
+    // => <div class="">JS</div>
     ball.classList.toggle('jsBall'); // turn css class on or off
-    // => class="jsBall"
+    // => <div class="jsBall">JS</div>
     ball.classList.toggle('jsBall'); // turn css class on or off
-    // => class=""
+    // => <div class="">JS</div>
     
     // set styles for the ball
     ball.style["width"]            = "100px";
@@ -57,28 +59,28 @@
     ball.style["border-radius"]    = "50px";
     ball.style["font-weight"]      = "bolder";
     ball.style["background-color"] = "blue";
-
+    
     // create an interval timer that fires every second
     //   setInterval ( Function : whatToDo, Number : intervalInMS )
-
+    
     function blink () {
         const newColor =
-            ( ball.style.backgroundColor === "blue" ) ? "red" : "blue";
+        ( ball.style.backgroundColor === "blue" ) ? "red" : "blue";
         ball.style.backgroundColor = newColor;
     }
-
+    
     // we dont use braces here because we dont wnat to call the function
     //               vv---/  setInterval calls the function for us, so it
     setInterval( blink, 1000 ); // needs the reference. If we called the
     //                             blink function, it would be executed
     //                             instantly.
-
+    
     // These 2 functions below are part of JavaScript:
     //   setInterval ( callback, time ) << runs the callback in a loop
     //      ... waits ... calls ... waits ... calls ... etc.
     //   setTimeout  ( callback, time ) << runs the callback function once
     //      ... waits ... calls
-
+    
     // The time unit is milliseconds ( 1 second / 1000 )
     //    1s = 1000
     //   10s = 1000 * 10
