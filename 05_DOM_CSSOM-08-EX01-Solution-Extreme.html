@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise 01</title>
+</head>
+<body>
+<!--
+    Create a script that formats the following song lyrics
+    using ONLY javascript. ( or choose own song )
+    Put paragraphs into paragraphs ;)
+    Set font sizes and change the page's background color.
+
+    BONUS: DRY - avoid code duplication
+-->
+<script>
+    function doStyle ( element ){
+        element.style.color = 'white';
+        element.style.whiteSpace = 'pre';
+        element.style.fontSize = '10px';
+        element.style.textAlign = 'center';
+    }
+
+    function addTag(text,type='p'){
+        const tag = document.createElement(type);
+        tag.innerText = text.trim();
+        document.body.append(tag);
+        doStyle(tag);
+        return tag;
+    }
+
+    function verse (text) {
+        return addTag(text);
+    }
+
+    function bridge () {
+        const p = verse(`Doch jetzt tut's nicht mehr weh\nNee, jetzt tut's nicht mehr weh\nUnd alles bleibt stumm\nUnd kein Sturm kommt auf wenn ich dich seh'`);
+        p.style.fontStyle = 'italic';
+    }
+
+    function chorus () {
+        const p = verse(`Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`);
+        p.style.fontWeight = 'bold';
+    }
+
+    function bridge_chorus(){
+        bridge();
+        chorus();
+    }
+
+    // document background
+    document.body.style.backgroundColor = 'red';
+
+    // add headline
+    addTag('Echt - Junimond','h1');
+    verse(`Die Welt schaut rauf\nZu meinem Fenster\nMit müden Augen\nGanz staubig und scheu\nIch bin hier oben auf meiner Wolke\nIch seh' dich kommen, aber du gehst vorbei`);
+    bridge_chorus();
+    verse(`Zweitausend Stunden hab' ich gewartet\nIch hab' sie alle gezählt und verflucht\nIch hab' getrunken, geraucht und gebetet\nHab' dich flussauf- und flussabwärts gesucht`);
+    for ( let i = 0; i < 2; i++ ) bridge_chorus();       
+    for ( let i = 0; i < 3; i++ ) chorus();       
+</script>
+</body>
+</html>

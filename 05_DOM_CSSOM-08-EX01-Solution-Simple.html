@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise 01</title>
+</head>
+<body>
+<!--
+    Create a script that formats the following song lyrics
+    using ONLY javascript. ( or choose own song )
+    Put paragraphs into paragraphs ;)
+    Set font sizes and change the page's background color.
+
+    BONUS: DRY - avoid code duplication
+-->
+<script>
+    // document background
+    document.body.style.backgroundColor = 'red';
+
+    // add headline
+    const headline = document.createElement('h1');
+    headline.style.color = 'white';
+    headline.style.whiteSpace = 'pre';
+    headline.style.fontSize = '10px';
+    headline.style.textAlign = 'center';
+    headline.innerText = 'Echt - Junimond';
+    document.body.append(headline);
+
+    let p; // re usable variable
+
+    // verse 1
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.innerText = `Die Welt schaut rauf\nZu meinem Fenster\nMit müden Augen\nGanz staubig und scheu\nIch bin hier oben auf meiner Wolke\nIch seh' dich kommen, aber du gehst vorbei`;
+    document.body.append(p);
+
+    // bridge
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.style.fontStyle = 'italic';
+    p.innerText = `Doch jetzt tut's nicht mehr weh\nNee, jetzt tut's nicht mehr weh\nUnd alles bleibt stumm\nUnd kein Sturm kommt auf wenn ich dich seh'`;
+    document.body.append(p);
+
+    // chorus
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+
+    // verse 2
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.innerText = `Zweitausend Stunden hab' ich gewartet\nIch hab' sie alle gezählt und verflucht\nIch hab' getrunken, geraucht und gebetet\nHab' dich flussauf- und flussabwärts gesucht`;
+    document.body.append(p);
+
+    // bridge
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.style.fontStyle = 'italic';
+    p.innerText = `Doch jetzt tut's nicht mehr weh\nNee, jetzt tut's nicht mehr weh\nUnd alles bleibt stumm\nUnd kein Sturm kommt auf wenn ich dich seh'`;
+    document.body.append(p);
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+
+    // bridge
+    p = document.createElement('p');
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+    p.style.fontStyle = 'italic';
+    p.innerText = `Doch jetzt tut's nicht mehr weh\nNee, jetzt tut's nicht mehr weh\nUnd alles bleibt stumm\nUnd kein Sturm kommt auf wenn ich dich seh'`;
+    document.body.append(p);
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+
+    // chorus
+    p = document.createElement('p');
+    p.style.fontWeight = 'bold';
+    p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+    document.body.append(p);
+    p.style.color = 'white';
+    p.style.whiteSpace = 'pre';
+    p.style.fontSize = '10px';
+    p.style.textAlign = 'center';
+</script>
+</body>
+</html>
