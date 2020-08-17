@@ -22,14 +22,25 @@
         ball.classList.toggle('cssBall');
         ball.classList.value = 'class1 class2 class3';
     </code></pre>
-    <h2>Inserting elements /append/prepend/...</h2>
+
+    <h2>Inserting elements append/prepend/...</h2>
     <pre><code class="language-js">
             document.body.append(ball)
-        //           .prepend(ball)
-        //       ball.appendTo(document.body);
-        // document.body.insertAdjacentElement( position, ball );
+        //               .prepend(ball)
+        //           ball.appendTo(document.body);
+        //  document.body.insertAdjacentElement( position, ball );
         //   => the broadsword of element insertion
     </code></pre>
+
+    <h2>Inserting text/html content</h2>
+    <pre><code class="language-js">
+
+        ball.innerText = "Hello!";        // this is safe
+
+        ball.innerHTML = "<b>Hello!</b>"; // this is considered
+                                          // dangerous (XSS)
+        // rather use createElement and walk the extra mile
+        </code></pre>
 
     <h2>Getting information about the window</h2>
     <pre><code class="language-js">
