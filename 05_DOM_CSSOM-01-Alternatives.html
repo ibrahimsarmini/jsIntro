@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS/D/OM</title>
+</head>
+<body>
+    <div class="cssBall">CSS</div>
+    <div class="jsBall">JS</div>
+</body>
+<script>
+    const ball = document.querySelector('.jsBall');
+    // ALL OF THESE METHODS CHANGE THE [style] ATTRIBUTE
+    // OF THE HTML TAG, THEY DO !!!NOT!!! DEFINE A CLASS 
+
+    ball.style["background-color"] = "green";
+    ball.style["width"]         = "100px";
+    ball.style["height"]        = "100px";
+    ball.style["border-radius"] = "50px";
+    ball.style["font-weight"]   = "bolder";
+    
+    // using the camelization rule
+    // this could be written like:
+    ball.style.backgroundColor  = "green";
+    ball.style.width            = "100px";
+    ball.style.height           = "100px";
+    ball.style.borderRadius     = "50px";
+    ball.style.fontWeight       = "bolder";
+    
+    // DELETE THE DASH (MINUS) AND CAPITALIZE THE NEXT LETTER
+    //   font-weight => fontWeight
+    
+    // It maintains a property called {cssText}
+    //   which contains the current CSS source code
+    
+    console.log('ball CSS',ball.style.cssText);
+    
+    // knowing this you can also write it like this:
+    
+    ball.style.cssText = `
+        width:  100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: green;
+        font-weight: bolder;
+    `;
+
+</script>
+
+<style>
+    /* The javascript code above has the exact same
+       effect as the css code below: */ 
+    .cssBall {
+        width:  100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: red;
+        font-weight: bolder;
+    }
+</style>
+
+</html>
