@@ -7,46 +7,45 @@
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-
 </head>
 <body>
     <h1>Summary</h1>
     <h2>Creating Elements</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         const ball = document.createElement('div');
         // document.write() // don't use it
-    </pre>
+    </code></pre>
     <h2>Setting CSS classes</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         ball.classList.add('cssBall');
         ball.classList.remove('cssBall');
         ball.classList.toggle('cssBall');
         ball.classList.value = 'class1 class2 class3';
-    </pre>
+    </code></pre>
     <h2>Inserting elements /append/prepend/...</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
             document.body.append(ball)
         //           .prepend(ball)
         //       ball.appendTo(document.body);
         // document.body.insertAdjacentElement( position, ball );
         //   => the broadsword of element insertion
-    </pre>
+    </code></pre>
 
     <h2>Getting information about the window</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         window.innerHeight // read only: height of the window
         window.innerWidth  // read only: width  of the window
-    </pre>
+    </code></pre>
 
     <h2>Do timed loops or wait to execute code</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         setInterval ( callback, timeInMS  );
         setTimeout  ( callback, timeInMS  );
         // clearTimeout, clearInterval // mdn
-    </pre>
+    </code></pre>
 
     <h2>Select existing elements from the document</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         document.querySelector()        // one element with css selector
         document.querySelectorAll()     // multiple by class
         document.getElementById()       // one element by id ( no # )
@@ -54,16 +53,16 @@
         // ...
         //   const $ = document.querySelectorAll
         //   $('.ball')
-    </pre>
+    </code></pre>
 
     <h2>Camelization Rule</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         ball.style['font-size'] = '12px';
         ball.style.fontSize     = '12px';
-    </pre>
+    </code></pre>
 
     <h2>Real CSS</h2>
-    <pre class="language-javascript">
+    <pre><code class="language-js">
         // translate into CSSOM
         ball.style.cssText = `
             width:  100px;
@@ -76,6 +75,7 @@
         console.log(
             ball.style.cssText
         );
-    </pre>
+    </code></pre>
 </body>
+<script>hljs.initHighlightingOnLoad();</script>
 </html>
