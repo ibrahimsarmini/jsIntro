@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS/D/OM</title>
+</head>
+<body></body>
+<script>
+    const ball = document.createElement('div'); // create a div
+    ball.classList.add('cssBall');              // add the cssBall class
+    document.body.append(ball);                 // append it to the document's body
+
+    let y = 0; // create a variable that memorizes the vertical postion
+               // we start at the same postion as our css
+    
+    function fly () { // the "simulation"
+        y += 1;       // moves the ball 1 pixel down every {frame}
+        if ( y + 100 > window.innerHeight ){
+            y = 0;
+        }
+        ball.style.top = `${y}px`; // apply the new position to the ball
+    }
+
+    // set an interval of 60 frames per second (fps)
+    // to animate the ball
+    setInterval( fly, 1000 / 60 ); // 60fps => very smooth
+
+</script>
+<style>
+    .cssBall {
+        position: absolute;
+        top:    0px;
+        width:  100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: red;
+    }
+</style>
+</html>
