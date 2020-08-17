@@ -1,0 +1,71 @@
+<!--
+  TODO Application
+    - Take user input and add it to a list of thing that i have to-do <<< hence TODO
+        - <Button> that <prompt>s for a new TODO
+    - Display all TODOs
+        - Create HTML for the TODOs
+            document.createElement
+            document.querySelector
+            <Element>.append()
+    - Remove TODOs
+        <Button> for each TODO
+        <Element>.remove()
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Todo App</title>
+  </head>
+  <body>
+    <script>
+      function createTodoFunction () {
+        // read todo from the user save it in the newTodo variable
+        var newTodo        = prompt("Please enter your task!");
+        // find the tbody element
+        var tBodyElement   = document.querySelector('#todosGoHere');
+        // create the html elements
+        var myNewRow       = document.createElement('tr');
+        var myTodoColumn   = document.createElement('td');
+        var myActionColumn = document.createElement('td');
+        var myDeleteButton = document.createElement('button');
+        // build the tree structure for the html elements
+        tBodyElement  .append(myNewRow);       // add myNewRow       as child of tBodyElement
+        myNewRow      .append(myTodoColumn);   // add myTodoColumn   as child of myNewRow
+        myNewRow      .append(myActionColumn); // add myActionColumn as child of myNewRow
+        myActionColumn.append(myDeleteButton); // add myDeleteButton as child of myActionColumn
+        // add the new todo items text to the column
+        myTodoColumn.innerText   = newTodo;
+        // set the title of the delete button
+        myDeleteButton.innerText = "Delete";
+        // create a function that removes this new todo item
+        myDeleteButton.onclick   = function(){
+          myNewRow.remove()
+        }
+      }
+    </script>
+
+    <button
+      id="createTodo"
+      onclick="createTodoFunction()"
+    >
+      Create TODO
+    </button>
+
+    <table border=2>
+
+      <thead>
+        <tr>
+          <th>TODO</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="todosGoHere">
+      </tbody>
+
+    </table>
+
+  </body>
+</html>
