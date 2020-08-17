@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS/D/OM</title>
+</head>
+<body>
+    <div class="jsBall">JS</div>
+</body>
+<script>
+    // get a reference to the div.ball using a css selector 
+    const ball = document.querySelector('.jsBall');
+
+    // set styles for the ball
+    ball.style["width"]            = "100px";
+    ball.style["height"]           = "100px";
+    ball.style["border-radius"]    = "50px";
+    ball.style["font-weight"]      = "bolder";
+    ball.style["background-color"] = "blue";
+
+    // create an interval timer that fires every second
+    //   setInterval ( Function : whatToDo, Number : intervalInMS )
+
+    function blink () {
+        const newColor =
+            ( ball.style.backgroundColor === "blue" ) ? "red" : "blue";
+        ball.style.backgroundColor = newColor;
+    }
+
+    // we dont use braces here because we dont wnat to call the function
+    //               vv---/  setInterval calls the function for us, so it
+    setInterval( blink, 1000 ); // needs the reference. If we called the
+    //                             blink function, it would be executed
+    //                             instantly.
+
+    // These 2 functions below are part of JavaScript:
+    //   setInterval ( callback, time ) << runs the callback in a loop
+    //      ... waits ... calls ... waits ... calls ... etc.
+    //   setTimeout  ( callback, time ) << runs the callback function once
+    //      ... waits ... calls
+
+    // The time unit is milliseconds ( 1 second / 1000 )
+    //    1s = 1000
+    //   10s = 1000 * 10
+    //    1m = 1000 * 60
+    //    1h = 1000 * 60 * 60
+    //    1d = 1000 * 60 * 60 * 25
+</script>
+</html>
