@@ -6,13 +6,13 @@
     <title>CSS/D/OM</title>
 </head>
 <body>
-    <div class="cssBall">CSS</div>
-    <div class="jsBall">JS</div>
+    <div id="cssBall">CSS</div>
+    <div id="jsBall">JS</div>
 </body>
 <script>
     // THIS METHOD CHANGE THE [style] ATTRIBUTE
     // OF THE HTML TAG, THEY DO !!!NOT!!! DEFINE A CLASS 
-    const ball = document.querySelector('.jsBall');
+    const ball = document.querySelector('#jsBall');
     ball.style["background-color"] = "green";
     ball.style["width"]            = "100px";
     ball.style["height"]           = "100px";
@@ -22,7 +22,7 @@
 <style>
     /* The javascript code above has the exact same
        effect as the css code below: */ 
-    .cssBall {
+    #cssBall {
         width:  100px;
         height: 100px;
         border-radius: 50px;
