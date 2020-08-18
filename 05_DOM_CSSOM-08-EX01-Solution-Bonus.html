@@ -16,9 +16,8 @@
 -->
 <script>
     function doStyle ( element ){
-        element.style.color = 'white';
-        element.style.whiteSpace = 'pre';
-        element.style.fontSize = '10px';
+        element.style.color     = 'white';
+        element.style.fontSize  = '10px';
         element.style.textAlign = 'center';
     }
 
@@ -32,7 +31,10 @@
     function bridge () {
         const p = document.createElement('p');
         p.style.fontStyle = 'italic';
-        p.innerText = `Doch jetzt tut's nicht mehr weh\nNee, jetzt tut's nicht mehr weh\nUnd alles bleibt stumm\nUnd kein Sturm kommt auf wenn ich dich seh'`;
+        p.innerText = `Doch jetzt tut's nicht mehr weh
+        Nee, jetzt tut's nicht mehr weh
+        Und alles bleibt stumm
+        Und kein Sturm kommt auf wenn ich dich seh'`;
         document.body.append(p);
         doStyle(p);
     }
@@ -40,7 +42,9 @@
     function chorus () {
         const p = document.createElement('p');
         p.style.fontWeight = 'bold';
-        p.innerText = `Es ist vorbei, bye bye Junimond\nEs ist vorbei\nEs ist vorbei, bye bye`;
+        p.innerText = `Es ist vorbei, bye bye Junimond
+        Es ist vorbei
+        Es ist vorbei, bye bye`;
         document.body.append(p);
         doStyle(p);
     }
@@ -61,9 +65,17 @@
     doStyle(headline);
 
     // compose song
-    verse(`Die Welt schaut rauf\nZu meinem Fenster\nMit müden Augen\nGanz staubig und scheu\nIch bin hier oben auf meiner Wolke\nIch seh' dich kommen, aber du gehst vorbei`);
+    verse(`Die Welt schaut rauf
+    Zu meinem Fenster
+    Mit müden Augen
+    Ganz staubig und scheu
+    Ich bin hier oben auf meiner Wolke
+    Ich seh' dich kommen, aber du gehst vorbei`);
     bridge_chorus();
-    verse(`Zweitausend Stunden hab' ich gewartet\nIch hab' sie alle gezählt und verflucht\nIch hab' getrunken, geraucht und gebetet\nHab' dich flussauf- und flussabwärts gesucht`);
+    verse(`Zweitausend Stunden hab' ich gewartet
+    Ich hab' sie alle gezählt und verflucht
+    Ich hab' getrunken, geraucht und gebetet
+    Hab' dich flussauf- und flussabwärts gesucht`);
     for ( let i = 0; i < 2; i++ ) bridge_chorus();       
     for ( let i = 0; i < 3; i++ ) chorus();       
 </script>
