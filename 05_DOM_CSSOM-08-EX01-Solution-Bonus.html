@@ -21,34 +21,39 @@
         element.style.textAlign = 'center';
     }
 
-    function verse (text) {
+    function verse ( text ) {
         const p = document.createElement('p');
-        p.innerText = text.trim();
+        p.innerText = text;
         document.body.append(p);
         doStyle(p);
     }
 
     function bridge () {
         const p = document.createElement('p');
-        p.style.fontStyle = 'italic';
+        // add the lyrics
         p.innerText = `Doch jetzt tut's nicht mehr weh
         Nee, jetzt tut's nicht mehr weh
         Und alles bleibt stumm
         Und kein Sturm kommt auf wenn ich dich seh'`;
-        document.body.append(p);
+        // add css
         doStyle(p);
+        p.style.fontStyle = 'italic';
+        // add to document
+        document.body.append(p);
     }
 
     function chorus () {
         const p = document.createElement('p');
-        p.style.fontWeight = 'bold';
+        // add the lyrics
         p.innerText = `Es ist vorbei, bye bye Junimond
         Es ist vorbei
         Es ist vorbei, bye bye`;
-        document.body.append(p);
+        // add css
         doStyle(p);
+        p.style.fontWeight = 'bold';
+        // add to the document
+        document.body.append(p);
     }
-
 
     function bridge_chorus(){
         bridge();
@@ -60,11 +65,12 @@
 
     // add headline
     const headline = document.createElement('h1');
+    headline.style.fontSize  = '14px';
     headline.innerText = 'Echt - Junimond';
     document.body.append(headline);
     doStyle(headline);
 
-    // compose song
+    // compose songdoStyle(headline);
     verse(`Die Welt schaut rauf
     Zu meinem Fenster
     Mit müden Augen
