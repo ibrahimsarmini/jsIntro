@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events n Stuff</title>
+</head>
+
+<body>
+    <div id="leftBoundary"></div>
+    <div id="half"></div>
+    <div id="rightBoundary"></div>
+    <div id="paddle"></div>
+</body>
+
+<style>
+
+    #leftBoundary {
+        position:         fixed;
+        left:             0px;
+        top:              0px;
+        bottom:           0px;
+        background-color: rgba(255,0,0,0.2);
+        width:            10px;
+    }
+
+    #rightBoundary {
+        position:         fixed;
+        right:            0px;
+        top:              0px;
+        bottom:           0px;
+        background-color: rgba(255,0,0,0.2);
+        width:            10px;
+    }
+
+    #half {
+        position:         fixed;
+        left:             0px;
+        top:              0px;
+        bottom:           0px;
+        background-color: rgba(255,0,0,0.2);
+        width:            50vw;
+    }
+
+    #paddle {
+        position:         fixed;
+        bottom:           10px;
+        left:             50%;
+        transform:        translate(-50%);
+        background-color: black;
+        border-radius:    5px;
+        height:           10px;
+        width:            100px;
+    }
+</style>
+
+<script>
+    const paddle = document.querySelector('#paddle');
+
+    // this works but the paddle moves out of the screen
+    document.onmousemove = event => {
+        paddle.style.left = event.clientX + 'px';
+    }
+
+    // let's constrain the paddle a little bit
+    //   -- settin a new on[xxx] event handler will replace te old one
+    document.onmousemove = event => {
+
+        // First we need to establish the minimum and maximum
+        //   position that my paddle is allowed to have
+
+        // width of paddle / 2 vv + vv left padding
+        const   leftBoundary = 50 + 10;
+        const  rightBoundary = window.innerWidth - 50 - 10;
+        // width of the window ^^^^^^^^^^^^^^^^^ - ^^ - ^^
+        //                     width of paddle / 2 ^^ - padding;
+        // i only need to substract the width od the paddle
+        // by 2 because i set translate in the css ^^^^^^^^^^^^^
+
+        let position = event.clientX;
+
+        // now we constrain the position, there are 3 alternatives:
+        if ( position < leftBoundary  ) position = leftBoundary;
+        if ( position > rightBoundary ) position = rightBoundary; 
+        // alternatively to using 2 if conditions you could use:
+        position = Math.max(leftBoundary,  position ); // gives you the bigger number
+        position = Math.min(rightBoundary, position ); // gives you the smaller number
+        // or shorter:
+        position = Math.max(leftBoundary, Math.min(rightBoundary, position ));
+
+        paddle.style.left = position + 'px';
+    }
+
+    // for keyboad events things become a bit more complicated
+
+    let position  = window.innerWidth / 2; // center of the window
+    let direction = 0;                     // 0 = stop : -1 = left : 1 = right
+
+    document.onkeydown = event => {
+        //                      vvvvvvvvvv  cryptic-number the actual key
+        console.log( 'keydown', event.code, event.keyCode, event.key );
+        switch ( event.code ){
+            case "ArrowLeft":  direction = -1; break; 
+            case "ArrowRight": direction =  1; break;
+            case "KeyA":       direction = -1; break; 
+            case "KeyD":       direction =  1; break;
+        }
+    };
+
+    document.onkeyup = event => {
+        //                    vvvvvvvvvv  cryptic-number the actual key
+        console.log( 'keyup', event.code, event.keyCode, event.key );
+        switch ( event.code ){
+            case "ArrowLeft":   if ( direction == -1 ) direction = 0; break;
+            case "ArrowRight":  if ( direction ==  1 ) direction = 0; break;
+            case "KeyA":        if ( direction == -1 ) direction = 0; break;
+            case "KeyD":        if ( direction ==  1 ) direction = 0; break;
+        }
+    };
+
+    const simulate = time => {
+        const  leftBoundary = 50 + 10;
+        const rightBoundary = window.innerWidth - 50 - 10;
+
+        if ( direction !== 0 ){
+            position += direction;
+            position = Math.max( leftBoundary, Math.min( rightBoundary, position ));
+            paddle.style.left = position + 'px'; // left: 101px
+        }
+    }
+
+    setInterval( simulate, 1000/60 );
+
+</script>
+
+</html>
