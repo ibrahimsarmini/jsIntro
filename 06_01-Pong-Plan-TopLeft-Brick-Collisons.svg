@@ -28,15 +28,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="783.19625"
-     inkscape:cy="366.06304"
+     inkscape:zoom="1.4"
+     inkscape:cx="895.94204"
+     inkscape:cy="195.71661"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="false"
      inkscape:window-width="1680"
-     inkscape:window-height="1013"
+     inkscape:window-height="1050"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,22 +66,22 @@
        id="rect1080"
        width="338.66666"
        height="320.5238"
-       x="-56.352116"
-       y="32.784103" />
+       x="-89.047058"
+       y="32.973091" />
     <rect
        style="opacity:0.58999999;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1.84505296;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect819"
        width="69.547623"
        height="34.017857"
-       x="83.88575"
+       x="84.414917"
        y="144.02518" />
     <rect
-       y="121.57452"
-       x="76.402206"
-       height="22.257998"
-       width="86.026619"
+       y="98.517967"
+       x="69.220657"
+       height="45.314545"
+       width="101.90162"
        id="rect831"
-       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.65986848;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:2.57764792;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.84624243;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect833"
@@ -112,7 +112,8 @@
          id="tspan845">const by = ballY + br;</tspan></text>
     <g
        id="g854"
-       transform="translate(99.348616,112.85066)">
+       transform="translate(-192.07102,78.076841)"
+       style="opacity:0.64200003">
       <g
          id="g861"
          transform="translate(72.162772,-124.01306)">
@@ -137,31 +138,31 @@
       </g>
     </g>
     <rect
-       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.41416347;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:2.12173557;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect892"
        width="31.082504"
-       height="44.715157"
+       height="100.65563"
        x="53.077595"
-       y="177.70114" />
+       y="121.76067" />
     <rect
-       y="177.70114"
+       y="121.38268"
        x="153.91037"
-       height="75.711899"
+       height="132.03035"
        width="17.872889"
        id="rect898"
-       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.39538383;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.84267402;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="-247.95532"
+       x="-196.55057"
        y="166.18155"
        id="text896"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan894"
-         x="-247.95532"
+         x="-196.55057"
          y="166.18155"
-         style="stroke-width:0.26458332">distBricks / 2</tspan></text>
+         style="stroke-width:0.26458332">br</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.74853706px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14371341"
@@ -187,15 +188,15 @@
     <text
        transform="rotate(-90)"
        id="text910"
-       y="75.845932"
-       x="-198.36275"
-       style="font-style:normal;font-weight:normal;font-size:2.8673563px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07168391"
+       y="78.7967"
+       x="-195.30183"
+       style="font-style:normal;font-weight:normal;font-size:10.78244019px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26956102"
        xml:space="preserve"><tspan
-         style="stroke-width:0.07168391"
-         y="75.845932"
-         x="-198.36275"
+         style="stroke-width:0.26956102"
+         y="78.7967"
+         x="-195.30183"
          id="tspan908"
-         sodipodi:role="line">distBricks / 2</tspan></text>
+         sodipodi:role="line">br</tspan></text>
     <g
        transform="matrix(0.50908384,0,0,0.50908384,124.9282,88.197558)"
        id="g958">
@@ -209,7 +210,7 @@
            y="37.477383"
            x="-102.60421"
            id="tspan912"
-           sodipodi:role="line">brickX - distBricks/2 &lt; bx</tspan></text>
+           sodipodi:role="line">brickX - br &lt; bx</tspan></text>
       <text
          id="text914-3"
          y="50.361317"
@@ -220,7 +221,7 @@
            y="50.361317"
            x="-103.12993"
            id="tspan912-6"
-           sodipodi:role="line">brickX + distBricks/2 + brickW &gt; bx</tspan></text>
+           sodipodi:role="line">brickX + br + brickW &gt; bx</tspan></text>
     </g>
     <text
        id="text950"
@@ -253,19 +254,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.38780403px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1346951"
-       x="-15.94439"
+       x="-21.99201"
        y="187.54105"
        id="text972"><tspan
          sodipodi:role="line"
          id="tspan968"
-         x="-15.94439"
+         x="-21.99201"
          y="187.54105"
-         style="stroke-width:0.1346951">brickY + brickH - br &lt; by</tspan><tspan
+         style="stroke-width:0.1346951">brickY + brickH &lt; by</tspan><tspan
          sodipodi:role="line"
-         x="-15.94439"
+         x="-21.99201"
          y="194.2758"
          style="stroke-width:0.1346951"
-         id="tspan1076">brickY + brickH &gt; by</tspan></text>
+         id="tspan1076">brickY + brickH + br &gt; by</tspan></text>
     <rect
        y="305.42102"
        x="83.88575"
@@ -289,7 +290,7 @@
        style="opacity:0.58999999;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:1.05990899;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        id="g1050"
-       transform="matrix(0.50908384,0,0,0.50908384,115.47879,258.66481)">
+       transform="matrix(0.50908384,0,0,0.50908384,145.5279,273.02791)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -316,34 +317,76 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.38780403px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1346951"
-       x="-18.287868"
+       x="13.651119"
        y="319.45477"
        id="text1056"><tspan
          sodipodi:role="line"
-         x="-18.287868"
+         x="13.651119"
          y="319.45477"
          style="stroke-width:0.1346951"
-         id="tspan1054">bx &gt; brickX - distBricks/2</tspan><tspan
+         id="tspan1054">bx &gt; brickX - br</tspan><tspan
          sodipodi:role="line"
-         x="-18.287868"
+         x="13.651119"
          y="326.18951"
          style="stroke-width:0.1346951"
          id="tspan1070">bx &lt; brickX</tspan></text>
     <text
        id="text1066"
        y="321.34464"
-       x="166.54248"
+       x="181.47253"
        style="font-style:normal;font-weight:normal;font-size:5.38780403px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1346951"
        xml:space="preserve"><tspan
          id="tspan1064"
          style="stroke-width:0.1346951"
          y="321.34464"
-         x="166.54248"
+         x="181.47253"
          sodipodi:role="line">bx &gt; brickX + brickW</tspan><tspan
          style="stroke-width:0.1346951"
          y="328.07938"
-         x="166.54248"
+         x="181.47253"
          sodipodi:role="line"
-         id="tspan1074">bx &lt; brickX + brickW + distBricks/2</tspan></text>
+         id="tspan1074">bx &lt; brickX + brickW + br</tspan></text>
+    <text
+       transform="rotate(-90)"
+       id="text5147"
+       y="166.18155"
+       x="-137.96426"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="166.18155"
+         x="-137.96426"
+         id="tspan5145"
+         sodipodi:role="line">br</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.78244019px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26956102"
+       x="-138.98338"
+       y="78.7967"
+       id="text5151"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan5149"
+         x="-138.98338"
+         y="78.7967"
+         style="stroke-width:0.26956102">br</tspan></text>
+    <rect
+       style="opacity:0.58999999;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.79885519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5153"
+       width="101.90162"
+       height="22.06901"
+       x="69.220657"
+       y="121.7635" />
+    <text
+       id="text5157"
+       y="144.79189"
+       x="110.51241"
+       style="font-style:normal;font-weight:normal;font-size:2.8673563px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07168391"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.07168391"
+         y="144.79189"
+         x="110.51241"
+         id="tspan5155"
+         sodipodi:role="line">BrickY</tspan></text>
   </g>
 </svg>
