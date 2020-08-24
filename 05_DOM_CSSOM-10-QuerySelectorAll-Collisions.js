@@ -30,9 +30,9 @@ let   ballY        = 1023;
 function ballCollidesWithRect ( left, top, width, height ) {
     return (
         ballX > left          &&
-        ballX < left + width  &&
+        ballX < left + width  && // right
         ballY > top           &&
-        ballY < top  + height
+        ballY < top  + height    // bottom
     );
 }
 
