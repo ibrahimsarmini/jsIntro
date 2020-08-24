@@ -11,7 +11,7 @@ let paddle = {
     y: 0, // << compatible
     moveX: 0
 }
-// we can write a functoion that deals with both
+// we can write a function that deals with both
 // objects BECAUSE they have compatible properties
 function moveX ( o ){
     o.x += 10; // << use compatibility here
