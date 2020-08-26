@@ -1,0 +1,9 @@
+[submodule "_project1/pong2"]
+	path = _project1/pong2
+	url = https://github.com/anhtungbui/js-pong
+[submodule "_project1/pong1"]
+	path = _project1/pong1
+	url = https://github.com/DCI-Dusseldorf/pong-game-group1
+[submodule "_project1/breakout"]
+	path = _project1/breakout
+	url = https://github.com/glennludszuweit/break-out-game
