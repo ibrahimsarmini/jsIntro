@@ -45,9 +45,43 @@ setInterval( Stock.updateAll, 60000 );
 // WROOOONG: this would forget about the apple
 //           context because we only give
 //           a reference to the function, NOT the object
+// see 06_XXX-Classes-Revisited-02
 
 setInterval( apple.getUpdatedPrice(), 60000 );
 // WROOOONG:                      ^^
 // this way we would call the function immedatly
 // and give setInterval whatever getUptatedPrice returns
 //   aaand it returns: undefined ( returns nothing )
+// see 06_XXX-Classes-Revisited-02
+
+// Classes can be extended
+
+class Bitcoin extends Stock {
+    // nothing is true, everything's permitted
+
+    price = 10000.0                // << override property
+    title = "Bitcoin"              // << add property
+    level = "dangerously volatile" // << add property
+
+    constructor(){
+        super( 'btc', 9500.0 ) // << Stock constructor
+        // constructor's are always optional,
+        // BUT: calling a super constructor is NOT
+    }
+
+    getUpdatedPrice () { // override super classes function
+        fetch(`https://api.bitcoinexchange.com/${name}`)
+        .then( response => response.json() )
+        .then( result =>
+            this.price = result.priceNow // << resposnibility of the method
+        ) // ^^^^^^^^^
+    }
+
+    buy(){ // add functions
+
+    }
+
+    sell(){ // add functions
+
+    }
+}
