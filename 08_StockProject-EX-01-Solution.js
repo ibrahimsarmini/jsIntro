@@ -1,7 +1,7 @@
 
 class Stock {
-    price = 0
-    id    = ''
+    price = 99
+    id    = 'aapl'
     history = [{
         date: new Date(),
         price: 0
@@ -9,8 +9,8 @@ class Stock {
 }
 
 class BoughtStock extends Stock {
-    boughtAt = 0
-    quantity = 0
+    boughtAt = 89
+    quantity = 100
 }
 
 class Portfolio {
