@@ -28,7 +28,8 @@ class BoughtStock extends Stock {
         super( id );
 
         this.quantity = quantity;
-
+        this.boughtAt = this.price;
+        
         PORTFOLIO.stocks.push(this);
 
     }
@@ -43,8 +44,10 @@ const Portfolio = {
 */
 
 class Portfolio {
+
     cash    = 1000000
     balance = 1000000
+
     constructor(){
         this.stocks = []
     }
