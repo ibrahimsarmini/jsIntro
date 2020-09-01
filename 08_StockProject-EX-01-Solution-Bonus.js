@@ -11,10 +11,10 @@ class Stock {
 
     constructor ( id ) {
         this.id      = id;
-        this.price   = Math.random() * 1000
+        this.price   = Math.random() * 1000;
         this.history = [
-            { date: ( new Date() ), price: 233 },
-            { date: ( new Date() ), price: 123 }
+            { date: ( new Date() ), price: Math.random() * 1000 },
+            { date: ( new Date() ), price: Math.random() * 1000 }
         ]; // << this would be individual to each stock
     }
 }
