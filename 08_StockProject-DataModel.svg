@@ -55,17 +55,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="562.77364"
-     inkscape:cy="749.79698"
+     inkscape:zoom="1.4"
+     inkscape:cx="1046.1017"
+     inkscape:cy="1210.671"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="1013"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-width="1866"
+     inkscape:window-height="1016"
+     inkscape:window-x="1734"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -80,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -94,8 +94,8 @@
        id="rect1981"
        width="337.15479"
        height="508.75595"
-       x="-90.043327"
-       y="2.7135749" />
+       x="-97.602852"
+       y="-8.247735" />
     <g
        style="fill:#aa0000"
        id="g1979"
@@ -1159,31 +1159,26 @@
          id="tspan1911"
          sodipodi:role="line">qty: [ 100 (input) ]</tspan></text>
     <g
-       style="fill:#aa0000"
-       id="g1933"
-       transform="matrix(-2.6806205,-0.02333084,0.03160879,-1.1076476,-583.85537,554.92969)">
-      <g
-         style="fill:#aa0000;filter:url(#filter1107)"
-         transform="matrix(-0.42050592,0,0,-0.42050592,-317.20102,119.63155)"
-         id="g1927">
-        <path
-           inkscape:connector-curvature="0"
-           style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
-           transform="scale(0.26458333)"
-           id="path1925" />
-      </g>
-      <g
-         style="fill:#aa0000"
-         id="g1931"
-         transform="matrix(-0.42050592,0,0,-0.42050592,-318.12098,118.09829)">
-        <path
-           id="path1929"
-           transform="scale(0.26458333)"
-           d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
-           style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
+       id="g1927"
+       transform="matrix(1.1272168,0.00981076,-0.01329168,0.46577237,272.86745,432.99568)"
+       style="fill:#aa0000;filter:url(#filter1107)">
+      <path
+         id="path1925"
+         transform="scale(0.26458333)"
+         d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
+         style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(1.1272168,0.00981076,-0.01329168,0.46577237,271.58085,431.54043)"
+       id="g1931"
+       style="fill:#aa0000">
+      <path
+         inkscape:connector-curvature="0"
+         style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
+         transform="scale(0.26458333)"
+         id="path1929" />
     </g>
     <g
        transform="matrix(0.70547254,0,0,0.70547254,78.63748,355.82645)"
@@ -1247,31 +1242,26 @@
            style="fill:#ffffff;stroke-width:0.16694266">quantity: Number</tspan></text>
     </g>
     <g
-       transform="matrix(-0.53393816,4.9720559,-1.5419513,-0.333974,132.81869,1551.0411)"
-       id="g1965"
-       style="fill:#aa0000">
-      <g
-         id="g1959"
-         transform="matrix(-0.42050592,0,0,-0.42050592,-317.20102,119.63155)"
-         style="fill:#aa0000;filter:url(#filter1107)">
-        <path
-           id="path1957"
-           transform="scale(0.26458333)"
-           d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
-           style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         transform="matrix(-0.42050592,0,0,-0.42050592,-318.12098,118.09829)"
-         id="g1963"
-         style="fill:#aa0000">
-        <path
-           inkscape:connector-curvature="0"
-           style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
-           transform="scale(0.26458333)"
-           id="path1961" />
-      </g>
+       style="fill:#aa0000;filter:url(#filter1107)"
+       transform="matrix(0.24359868,-1.7864602,0.70348466,0.11999689,118.93289,9.9152925)"
+       id="g1959">
+      <path
+         inkscape:connector-curvature="0"
+         style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
+         transform="scale(0.26458333)"
+         id="path1957" />
+    </g>
+    <g
+       style="fill:#aa0000"
+       id="g1963"
+       transform="matrix(0.24359868,-1.7864602,0.70348466,0.11999689,116.73919,8.032008)">
+      <path
+         id="path1961"
+         transform="scale(0.26458333)"
+         d="m -758.43359,155.46875 v 78.05078 H -911.56641 V 340.0918 h 153.13282 v 78.05078 l 131.33593,-131.33789 z"
+         style="opacity:0.853;fill:#aa0000;fill-opacity:0.57276994;stroke:none;stroke-width:5.10524893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
     </g>
     <text
        xml:space="preserve"
@@ -1284,5 +1274,21 @@
          x="-77.351646"
          y="418.29349"
          style="stroke-width:0.22089127">{price}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.2296772px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15574192"
+       x="97.298904"
+       y="221.19589"
+       id="text1044"><tspan
+         sodipodi:role="line"
+         id="tspan1042"
+         x="97.298904"
+         y="221.19589"
+         style="stroke-width:0.15574192">cash: liquid money that can be spent</tspan><tspan
+         sodipodi:role="line"
+         x="97.298904"
+         y="228.98299"
+         style="stroke-width:0.15574192"
+         id="tspan1046">balance: cash + accumulated value of stock</tspan></text>
   </g>
 </svg>
