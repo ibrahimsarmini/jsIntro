@@ -2,7 +2,7 @@
 class Horse {
     name = 'ette'
 
-    constructor (horseName) {
+    constructor ( horseName ) {
         this.name = horseName;
     }
 

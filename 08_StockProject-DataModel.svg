@@ -55,9 +55,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="1046.1017"
-     inkscape:cy="1210.671"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="576.63155"
+     inkscape:cy="864.96314"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1290,5 +1290,39 @@
          y="228.98299"
          style="stroke-width:0.15574192"
          id="tspan1046">balance: cash + accumulated value of stock</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-84.163399"
+       y="15.951822"
+       id="text1047"><tspan
+         sodipodi:role="line"
+         id="tspan1045"
+         x="-84.163399"
+         y="15.951822"
+         style="stroke-width:0.26458332">fetch/promises</tspan></text>
+    <text
+       id="text1051"
+       y="108.42708"
+       x="144.61931"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="108.42708"
+         x="144.61931"
+         id="tspan1049"
+         sodipodi:role="line">localStorage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20.8444519px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.52111125"
+       x="-294.88324"
+       y="204.50804"
+       id="text1059"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         id="tspan1057"
+         x="-294.88324"
+         y="204.50804"
+         style="stroke-width:0.52111125">jQuery</tspan></text>
   </g>
 </svg>
