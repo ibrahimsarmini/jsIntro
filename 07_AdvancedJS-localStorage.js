@@ -6,7 +6,7 @@
 localStorage.clear()             // delete everything
 localStorage.setItem(key, value) // save a {value} under the {key} 
 localStorage.getItem(key)        // get {value} from the database that has {key}
-localStorage.removeItem(key)     // delete {key} and it's value from the database
+localStorage.removeItem(key)     // delete {key} and it's {value} from the database
 
 // but localStorage has problem, it cant save arrays
 // or objects, it just uses Strings
@@ -34,5 +34,5 @@ function GET (key) {
     return JSON.parse( localStorage.getItem( key ) );
 }
 
-SET('users',[{name:'anx'}]);
-GET('users');
+SET( 'users', [{name:'anx'}] );
+GET( 'users' );
