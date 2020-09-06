@@ -1,4 +1,3 @@
-
 /*
     1. Input Output
     Write a program that takes in 3 Numbers,
@@ -17,3 +16,19 @@
     Hint: Look at Promises, Fetch
             (Async functions)
 */
+
+const key = "saved-items";
+
+function set(...numbers) {
+  localStorage.setItem(key, JSON.stringify(numbers));
+}
+
+set(1, 2, 3);
+
+const items = JSON.parse(localStorage.getItem(key));
+
+if (items) {
+  items.forEach((item) => {
+    console.log(item);
+  });
+}
